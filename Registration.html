@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="view-repoter" content="width-device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="Registration.css"/>
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/animate.css">
+   <script type="text/javascript" src="wow.min.js"></script>
+    <script>
+    new WOW().init();
+
+
+    </script>
+    <script src="jquery-3.2.1.min"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function emailValidate() {
+		//email validate
+    var x = document.getElementById('email').value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        document.getElementById("email").setCustomValidity("Not a valid e-mail address");
+    } else {
+        document.getElementById("email").setCustomValidity('');
+    }
+}
+
+function check(input) {
+		//confirm Password
+		if (input.value != document.getElementById('pass1').value) {
+        input.setCustomValidity('Password Must be Matching.');
+    } else {
+        input.setCustomValidity('');
+    }
+}
+</script>
+</head>
+<body>
+
+		<title>Registration</title>
+
+	</head>
+	<body>
+		<header>
+			<div class="bounceInLeft animated"><h1>  7kaya Mall</h1>
+			<nav>
+				<a href="#" id="menu-icon"></a>
+				<ul>
+		<li><a href="page.html" class="current">Home </a></li>
+		<li><a href="Registration.html">Login </a></li>
+		<li><a href="Shopping.html">Shopping </a></li>
+		<li><a href="Services.html">Services </a></li>
+		<li><a href="Offers.html">Offers </a></li>
+		<li><a href="About.html">About </a></li>
+		<li><a href="Contact.html">Contact</a></li>
+	</ul>
+                </nav></div>
+		</header>
+    <div class="back"><div class="r">
+			<div class="registration"><form >
+    	<fieldset class="register">
+      	<legend>Registration</legend>
+				<br>
+				<br>
+				First name:  <input type="text" name="first_name" required>
+				<br>
+				<br>
+				Last name:  <input type="text" name="last_name" required>
+				<br>
+				<br>
+				User ID :  <br><input type="number" name="user_id" id="num" min="0" required/>
+				<br>
+				<br>
+				Password:  <input type="password" name="password" id="pass1" required>
+				<br>
+				<br>
+				Re-enter Password:  <input type="password" name="password" id="pass2" oninput="check(this)" required>
+				<br>
+				<br>
+				E-mail :<input type="email" name="email" id="email" required>
+				<br>
+				<br>
+				Phone number   :  <br><input type="number" name="mobile" id="num" min="0" required>
+				<br>
+				<br>
+				Age:  <input type="number"  name="days" placeholder="Days" min="1" max="31" required> <input type="number"  name="days" placeholder="Month" min="1" max="12" required>
+				 <input type="number"  name="days" placeholder="Year" min="1950" max="2000" required>
+				<br>
+				<br>
+				<br>
+     	Gender :
+			<select name="dropdown" required>
+				<option value="Male" selected>Male</option>
+				<option value="Female">Female</option>
+				<option value="AnotherKind">Another Kind</option>
+			</select>
+			<br>
+			<br>
+		</fieldset>
+		<br>
+		<br>
+  	<fieldset class="register">
+      <legend>Another Informations</legend>
+    	<h4>please enter your shopping method : </h4><br>
+			<input type="radio" name="method" value="on" required> Online<br>
+			<input type="radio" name="method" value="on" required> Visa<br>
+			<input type="radio" name="method" value="on" required> Cash
+			<br>
+			<br>
+    	Description : <br />
+			<textarea rows="5" cols="50" name="description" placeholder="Enter description here..." required>
+			</textarea>
+		</fieldset>
+
+    	<br>
+    	<br>
+			<div class="button">
+				<input type="submit" name="submit" value="Submit" id="submit" onclick="emailValidate()"/>
+				<input type="reset" name="reset" id="submit" value="Reset"/>
+    	</div>
+                </form></div>
+    </div>
+
+    <div class="mm">
+  <h2>login</h2>
+
+  <form class="form-inline" action="/action_page.php">
+      <label for="email">Email:</label><br>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required><br><br>
+      <label for="pwd">Password:</label><br>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required><br><br>
+      <label><input type="checkbox" name="remember">Remember me</label><br><br>
+    <button type="submit" name="submit" class="btn btn-default" id="submit" onclick="emailValidate()">Submit</button><br>
+  </form>
+        </div></div>
+    <footer>
+<section>
+<h2>7kaya MALL</h2>
+<p>Maadi, Al-Futtaim Property <br>
+5th Settlement<br>
+PO Box 171-11835<br>
+9 Street Al Maadi, Egypt<br><br>
+
+Sales Operating Hours: Sun - Thurs from 9:30 am to 5:00 pm
+Mall Operating Hours: 10:00 am to 12:00 am all week<br><br>
+
+  </section>
+  <section>
+    <h3>Connect With Us!</h3>
+      <ul class="social">
+      <li><a href="#" class="fa fa-facebook fa-2x face"></a></li>
+      <li><a href="#" class="fa fa-twitter fa-2x "></a></li>
+      <li><a href="#" class="fa fa-google-plus fa-2x"></a></li>
+        <li><a href="#" class="fa fa-youtube fa-2x"></a></li>
+     </ul>
+  </section>
+  <section>
+    <h1 class="holly">7kaya Mall</h1>
+  </section>
+</footer>
+<footer class="second">
+  <p>Copyright &copy; All Right Reserved</p>
+
+</footer>
+    <!-- Scroll-top -->
+
+    <div id="scroll-top">
+      <i class="fa fa-chevron-up fa-2x"></i>
+    </div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0,;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+		</body>
+</html>

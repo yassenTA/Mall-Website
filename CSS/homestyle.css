@@ -1,0 +1,257 @@
+*{
+		margin: 0px ; 
+		border: 0px ; 
+		padding: 0px ; 
+	}
+	body
+	{
+		background: #F0F0F0 ; 
+		font: 14px/20px Arial, san-serif ;
+		color: #555 ; 
+	
+	}
+	h1 {
+		text-align: center;
+		font-size: 180% ; 
+		line-height: 120% ; 
+		padding: 5% 0;
+	}
+	h2
+	{
+		text-decoration: underline;
+		line-height: 260%; 
+		padding-left: 2%;
+	}
+	h3
+	{
+	
+		padding: 5% 0 ;
+	}
+	p{
+		padding: 1px ; 
+	}
+	img
+	{
+		text-align: center ; 
+		max-width: 100% ; 
+		height: auto;
+		width: auto;
+	}
+	a
+	{
+		color: #FFF ; 
+		text-decoration: none;
+		font-weight: bold;
+	}
+	a:hover 
+	{
+		color: #FFF ; 
+		text-decoration: underline;
+	}
+	header
+	{
+		background: #5A5656; 
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;
+		left: 0;
+        opacity: 0.90;
+        background-image: url('../image/dark.png');
+	}
+	header h1 
+	{
+		font-weight: bold;
+		font-family: Edwardian script ITC;
+		font-size: 80px;
+		color: #FFF ; 
+		margin-left: 26px; 
+		padding: 15px; 
+		padding-top: 0px;
+		float: left;
+	}
+
+	nav
+	{
+		float: right;
+		padding: 10px 20px 20px 0px ;
+		font-size: 18px;
+        margin: 20px ; 
+
+	}
+	ul
+	{
+		list-style: none ; 
+	}
+	nav ul li 
+	{
+		display: inline-block;
+		float: left;
+		padding: 10px ; 
+	}
+	.current {
+		color:#FFF;
+		text-decoration: underline;
+	}
+
+	#content 
+	{
+		margin: 0px auto ; 
+		max-width: 1300px ; 
+		margin-top: 130px;
+	}
+	.links {
+		color: #333 ; 
+		border: 2px solid #CCC ;
+	}
+	
+    section 
+    {
+    	width: 29%;
+    	float: left;
+    	margin: 2% 2% ; 
+    	text-align: center;
+    }
+    .clear
+    {
+    	clear: both;
+    }
+    article 
+    {
+    	float: left;
+    	margin: 0 auto ; 
+    	width: 50% ; 
+    	height: auto;
+    	padding: 4%;
+    }
+    aside
+    {
+    	float: right;
+    	margin: 0 auto ; 
+    	width: 35% ; 
+    	height: auto;
+    	padding: 3%;
+    }
+    footer 
+    {
+    	background-image: url("../image/dark.png");
+    	width: 100%;
+    	overflow: hidden;
+    	opacity: 0.90
+    }
+    footer p, footer h2
+    {
+    	color: #FFF ; 
+    }
+    footer h3
+    {
+    	margin-top:50px ;
+    	margin-bottom: 50px ; 
+    	color: #FFF;
+    }
+    footer p a 
+    {
+    	color: #FFF; 
+    	text-decoration: none;
+    }
+    ul.social li 
+    {
+    	display: inline;
+    }
+    footer .holly{
+     	width: 300px;
+     	height: 300px;
+        color: #FFF ; 
+        font-size: 100px ; 
+        font-family: Edwardian script ITC ; 
+    }
+    footer.second 
+    {
+    	border-top: 1px solid #4D4E50 ; 
+    	background-color: #333333 ; 
+    	max-height: 45px ; 
+    	text-align: center ; 
+    	opacity: 0.95 ;
+    }
+ 
+    /* Start Scroll*/
+	#scroll-top
+	{
+  	background: black ;
+  	color: #FFF ;
+ 	position: fixed;
+ 	right: 10px ;
+  	bottom: 20px ;
+  	z-index: 9999 ;
+  	cursor: pointer;
+  	padding: 10px ;
+  	padding-bottom: 13px ;
+ 	border-radius: 50px ;
+ 	display: none ;
+    }
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999;
+ background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px 50px;
+    transition: ease-in-out;
+    display: none;
+}
+
+#myBtn:hover {
+  background-color: gray;
+}
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999;
+  border: double;
+  outline:  1px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  background:url("images.png") center center fixed no-repeat;  
+  background-size: cover;
+}
+.haha{
+    background:url("images.png") center center fixed no-repeat;  
+    overflow:hidden;
+    position: fixed;
+    left:10%;
+    bottom: 10%;
+    z-index: 9999;
+    padding: 15px;
+    
+}
+#myBtn:hover {
+  background-color: gray;
+}
+#scroll-up{
+    width: 50px;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    z-index: 9999;
+    background-color: #777;
+    cursor: pointer;
+    display: none;
+    
+    
+}
+#scroll-up:hover{
+    background-color: #444;
+}

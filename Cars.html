@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<meta name="view-repoter" content="width-device-width, initial-scale=1.0" >
+  <link rel="stylesheet" href="CSS/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/cars.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/animate.css">
+   <script type="text/javascript" src="wow.min.js"></script>
+    <script>
+    new WOW().init();
+    
+    
+    </script>
+    <script src="jquery-3.2.1.min"></script>
+	<title>Cars</title>
+</head>
+<body>
+	
+<header>
+
+       <div class="item bounceInLeft animated" ></di> <h1>7kaya Mall</h1></di> 
+	<br>
+	<nav>
+  <ul>
+	<a href="#" id="menu-icon"></a>
+<li><a href="page.html" >Home </a></li>
+    <li><a href="Registration.html">Login </a></li>
+    <li><a href="Shopping.html"class="current">Shopping </a></li>
+    <li><a href="Services.html">Services </a></li>
+    <li><a href="Offers.html">Offers </a></li>
+    <li><a href="About.html">About </a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    </ul>
+	</nav>
+</header>
+ 
+     <! slideshow >
+<section style="margin-top:60px;">
+ <img class="slide1" src="h1.png" width="50%" height="30%">
+ <img class="slide1" src="h2.png" width="50%" height="30%" >
+ <img class="slide1" src="h3.png" width="50%" height="30%">
+ <img class="slide1" src="h4.png" width="50%" height="30%">
+ <img class="slide1" src="h5.png" width="50%" height="30%">
+ <img class="slide1" src="h6.png"width="50%" height="30%" >
+
+</section>
+<script>
+var index = 0;
+   move();
+
+function move() {
+   var i;
+   var x = document.getElementsByClassName("slide1");
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+   }
+   index++;
+   if (index > x.length) {index = 1}
+   x[index-1].style.display = "block";
+   setTimeout(move, 3000);
+}
+</script>
+
+
+ <footer>
+<section>
+<h2>7kaya MALL</h2>
+<p>Maadi, Al-Futtaim Property <br>
+5th Settlement<br>
+PO Box 171-11835<br>
+9 Street Al Maadi, Egypt<br><br>
+
+Sales Operating Hours: Sun - Thurs from 9:30 am to 5:00 pm
+Mall Operating Hours: 10:00 am to 12:00 am all week<br><br>
+
+  </section>
+  <section>
+    <h3>Connect With Us!</h3>
+      <ul class="social">
+      <li><a href="#" class="fa fa-facebook fa-2x face"></a></li>
+      <li><a href="#" class="fa fa-twitter fa-2x "></a></li>
+      <li><a href="#" class="fa fa-google-plus fa-2x"></a></li>
+        <li><a href="#" class="fa fa-youtube fa-2x"></a></li>
+     </ul>  
+  </section>
+  <section>
+    <h1 class="holly">7kaya Mall</h1>
+  </section>
+</footer>
+<footer class="second">
+  <p>Copyright &copy; All Right Reserved</p>
+
+</footer>
+    <!-- Scroll-top -->
+
+    <div id="scroll-top">
+      <i class="fa fa-chevron-up fa-2x"></i>
+    </div>
+
+   <script src="jquery-3.2.1.min%20(1).js"></script>
+<div id="scroll-up"><p>Scroll
+    Top</p></div>
+
+<script>
+$(function(){
+   var scrollButton=$("#scroll-top") ;
+    $(window).scroll(function(){
+      if( $(this).scrollTop()>=100){
+         scrollButton.show();
+          
+      }
+        else{
+            scrollButton.hide();
+        }
+        
+    });
+    scrollButton.click(function(){
+       $("html,body").animate({scrollTop:0},1000); 
+    });
+});
+
+
+
+
+</script>
+</body>
+
+</html>

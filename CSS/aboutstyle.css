@@ -1,0 +1,279 @@
+*{
+    margin: 0px ; 
+    border: 0px ; 
+    padding: 0px ; 
+  }
+  body
+  {
+    background: #F0F0F0 ; 
+    font: 14px/20px Arial, san-serif ;
+    color: #555 ; 
+    margin:0px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 180% ; 
+    line-height: 120% ; 
+    padding: 5% 0;
+  }
+  h2
+  {
+    text-decoration: underline;
+    line-height: 280%; 
+    padding-left: 2%;
+  }
+  h3
+  {
+    line-height: 110px;
+    padding: 5% 0 ;
+  }
+  p{
+    padding: 1px ; 
+  }
+  img
+  {
+    text-align: center ; 
+    max-width: 100% ; 
+    height: auto;
+    width: auto;
+  }
+  a
+  {
+    color: #FFF ; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover 
+  {
+    color: #FFF ; 
+    text-decoration: underline;
+  }
+.container{
+  width: 1170px;
+  margin: auto;
+}
+.clear{
+  clear: both;
+}
+.charp:after{
+  content: "";
+  display: inline-block;
+  width: 60px;
+  border-bottom: 8px solid #333;
+}
+/*Start My Style*/
+
+/*Start Header*/
+header
+  {
+    background: #5A5656; 
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+        opacity: 0.90;
+        background-image: url('../image/dark.png');
+  }
+  header h1 
+  {
+    font-weight: bold;
+    font-family: Edwardian script ITC;
+    font-size: 80px;
+    color: #FFF ; 
+    margin-left: 26px; 
+    padding: 15px; 
+    padding-top: 0px;
+    float: left;
+  }
+
+  nav
+  {
+    float: right;
+    padding: 10px 20px 20px 0px ;
+    font-size: 18px;
+        margin: 20px ; 
+
+  }
+
+  a:hover#menu-icon {
+       border-radius: 4px 4px 0 0; 
+  }
+  ul
+  {
+    list-style: none ; 
+  }
+  nav ul li 
+  {
+    display: inline-block;
+    float: left;
+    padding: 10px ; 
+  }
+  .clearfix 
+  {
+
+    margin-top: 105px ; 
+    padding: 20px ;
+   
+  }
+/*end Header*/
+.about-us{
+  text-align: center;
+  margin: 0px;
+}
+.about-us .title h1{
+  font-size: 40px;
+  margin: 0;
+  margin-top: 110px;
+  padding-top: 10px;
+}
+.about-us .title p{
+  margin-top: 0px;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.about-info{
+  margin: 0 -30px;
+  padding: 38px 0;
+  overflow: hidden;
+}
+.about-us .content{
+  width: 28%;
+  float: left;
+  padding: 0 30px;
+}
+.about-us .content h3{
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.about-us .content p{
+  font-size: 20px;
+  margin-top: 10px;
+}
+/*Start About Of Admin*/
+.admin{
+  text-align: center;
+}
+.admin h2{
+  font-size: 36px;
+  margin-bottom: 0px;
+}
+.about-of-admin{
+  background-color: #333;
+  height: 860px;
+}
+.about-of-admin .man{
+  width: 24%;
+  height: 400px;
+  margin: 30px 10px 0px 0px;
+  float: left;
+  color: #FFF
+}
+.about-of-admin .man img{
+  width: 100%;
+  height:400;
+  border-radius:100px;
+}
+.about-of-admin .man h3{
+  text-align: center;
+  font-size: 22px;
+}
+.about-of-admin .man p{
+  text-align: center;
+}
+.about-of-admin .man p span{
+  font-size: 18px;
+  color: teal;
+}
+.about-of-admin .endadmin{
+  margin-left: 300px;
+}
+/*end About Of Admin*/
+/*Start Footer*/
+footer 
+    {
+      background-image: url("../image/dark.png");
+      width: 100%;
+      overflow: hidden;
+      opacity: 0.90
+    }
+    footer section  
+    {
+      width: 29%;
+      float: left;
+      margin: 2% 2% ; 
+      text-align: center;
+    }
+    footer p, footer h2
+    {
+      color: #FFF ; 
+    }
+    footer p, footer h3
+    {
+      color: #FFF;
+    }
+    footer p a 
+    {
+      color: #FFF; 
+      text-decoration: none;
+    }
+    ul.social li 
+    {
+      display: inline;
+    }
+    ul.social li img 
+    {
+      height: 50px;
+    }
+    footer.second 
+    {
+      border-top: 1px solid #4D4E50 ; 
+      background-color: #333333 ; 
+      max-height: 50px ; 
+      text-align: center ; 
+      opacity: 0.95 ;
+    }
+     footer .holly{
+      width: 300px;
+      height: 300px;
+        color: #FFF ; 
+        font-size: 100px ; 
+        font-family: Edwardian script ITC ; 
+    }
+    /* Start Scroll*/
+#scroll-top
+{
+  background: #000 ;
+  color: #FFF ;
+  position: fixed;
+  right: 10px ;
+  bottom: 20px ;
+  z-index: 9999 ;
+  cursor: pointer;
+  padding: 10px ;
+  padding-bottom: 13px ;
+  border-radius: 50px ;
+  display: none ;
+}
+.yh{
+    float: right;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999;
+  border: double;
+  outline:  1px solid black;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: gray;
+}
